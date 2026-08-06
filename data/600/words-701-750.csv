@@ -1,0 +1,51 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+701,policyholder,/pɑləsihoʊldɚ/,n.,投保人,600,Customer Service
+702,complain,/kəmpleɪn/,v.,投诉,600,Customer Service
+703,resolve,/rizɑlv/,v.,解决,600,Customer Service
+704,replacement,/rɪpleɪsmənt/,n.,更换品；替代,600,Customer Service
+705,representative,/rɛprəzɛntətɪv/,n.,代表；客服人员,600,Customer Service
+706,assistance,/əsɪstəns/,n.,帮助,600,Customer Service
+707,supportive,/səpɔrtɪv/,adj.,支持性的,600,Customer Service
+708,courteous,/kɝtiəs/,adj.,有礼貌的,600,Customer Service
+709,prompt,/prɑmpt/,adj.,迅速的,600,Customer Service
+710,convenient,/kənvinjənt/,adj.,方便的,600,Customer Service
+711,accessible,/æksɛsəbəl/,adj.,容易获得的；可进入的,600,Customer Service
+712,handle,/hændəl/,v.,处理,600,Customer Service
+713,suitable,/sutəbəl/,adj.,合适的,600,Customer Service
+714,recommendation,/rɛkəməndeɪʃən/,n.,建议；推荐,600,Customer Service
+715,amend,/əmɛnd/,v.,修改；修订,600,Contracts & Legal
+716,amendment,/əmɛndmənt/,n.,修正案；修改,600,Contracts & Legal
+717,comply,/kəmplaɪ/,v.,遵守,600,Contracts & Legal
+718,compliance,/kəmplaɪəns/,n.,合规；遵守,600,Contracts & Legal
+719,confidential,/kɑnfədɛnʃəl/,adj.,机密的,600,Contracts & Legal
+720,confidentiality,/kɑnfədɛnʃiæləti/,n.,保密性,600,Contracts & Legal
+721,ownership,/oʊnɚʃɪp/,n.,所有权,600,Contracts & Legal
+722,license,/laɪsəns/,n./v.,许可证；授权,600,Contracts & Legal
+723,tentative,/tɛntətɪv/,adj.,暂定的；试探性的,600,Meetings & Planning
+724,milestone,/maɪlstoʊn/,n.,里程碑；阶段目标,600,Management & Strategy
+725,benchmark,/bɛntʃmɑrk/,n./v.,基准；以…为基准,600,Management & Strategy
+726,constraint,/kənstreɪnt/,n.,限制条件,600,Management & Strategy
+727,contingency,/kəntɪndʒənsi/,n.,应急情况；备用方案,600,Management & Strategy
+728,feasible,/fizəbəl/,adj.,可行的,600,Management & Strategy
+729,implement,/ɪmpləmənt/,v.,实施,600,Management & Strategy
+730,implementation,/ɪmpləmɛnteɪʃən/,n.,实施,600,Management & Strategy
+731,delegate,/dɛləɡeɪt/,v.,委派,600,Management & Strategy
+732,supervise,/supɚvaɪz/,v.,监督,600,Management & Strategy
+733,reconcile,/rɛkənsaɪl/,v.,核对；调和,600,Finance & Accounting
+734,payroll,/peɪroʊl/,n.,工资单；工资总额,600,Finance & Accounting
+735,taxation,/tækseɪʃən/,n.,税收,600,Finance & Accounting
+736,fiscal,/fɪskəl/,adj.,财政的；会计年度的,600,Finance & Accounting
+737,expenditure,/ɪkspɛndətʃɚ/,n.,支出,600,Finance & Accounting
+738,deficit,/dɛfəsət/,n.,赤字；不足,600,Finance & Accounting
+739,surplus,/sɝpləs/,n.,盈余；过剩,600,Finance & Accounting
+740,installment,/ɪnstɔlmənt/,n.,分期付款,600,Finance & Accounting
+741,branding,/brændɪŋ/,n.,品牌塑造,600,Marketing & Sales
+742,endorsement,/ɛndɔrsmənt/,n.,代言；认可,600,Marketing & Sales
+743,publicity,/pəblɪsəti/,n.,宣传；知名度,600,Marketing & Sales
+744,subscription,/səbskrɪpʃən/,n.,订阅；订购,600,Marketing & Sales
+745,consignment,/kənsaɪnmənt/,n.,托运货物；寄售,600,Logistics & Supply
+746,procure,/proʊkjʊr/,v.,采购；获得,600,Procurement
+747,requisition,/rɛkwəzɪʃən/,n.,申购单；正式请求,600,Procurement
+748,fulfillment,/fʊlfɪlmənt/,n.,订单履行；完成,600,Logistics & Supply
+749,downtime,/daʊntaɪm/,n.,停机时间,600,Production & Quality
+750,troubleshoot,/trʌbəlʃut/,v.,排查故障,600,Technology & IT
