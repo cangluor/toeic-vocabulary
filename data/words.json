@@ -1,7 +1,8 @@
 {
   "levels": {
     "400": {
-      "count": 400,
+      "newWordCount": 400,
+      "cumulativeCount": 400,
       "parts": [
         "400/words-001-100.csv",
         "400/words-101-200.csv",
@@ -18,9 +19,19 @@
         "600/words-601-700.csv",
         "600/words-701-750.csv"
       ]
+    },
+    "700": {
+      "newWordCount": 250,
+      "cumulativeCount": 1000,
+      "parts": [
+        "700/words-751-850.csv",
+        "700/words-851-950.csv",
+        "700/words-951-1000.csv"
+      ]
     }
   },
+  "totalWordCount": 1000,
   "format": "csv-parts",
   "examplesIncluded": false,
-  "notes": "400分基础词400个、600分新增词350个，共计750个。音标为候选美式IPA，后续继续复核。"
+  "notes": "400分基础词400个、600分新增词350个、700分新增词250个，共计1000个。音标为候选美式IPA，后续继续复核。"
 }
