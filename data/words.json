@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "word": "office",
+    "phonetic": "/ˈɔːfɪs/",
+    "partOfSpeech": "n.",
+    "meaning": "办公室；办事处",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Office & Work",
+    "status": "candidate"
+  },
+  {
+    "id": 2,
+    "word": "company",
+    "phonetic": "/ˈkʌmpəni/",
+    "partOfSpeech": "n.",
+    "meaning": "公司",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Office & Work",
+    "status": "candidate"
+  },
+  {
+    "id": 3,
+    "word": "employee",
+    "phonetic": "/ɪmˈplɔɪiː/",
+    "partOfSpeech": "n.",
+    "meaning": "员工",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Employment",
+    "status": "candidate"
+  },
+  {
+    "id": 4,
+    "word": "employer",
+    "phonetic": "/ɪmˈplɔɪər/",
+    "partOfSpeech": "n.",
+    "meaning": "雇主",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Employment",
+    "status": "candidate"
+  },
+  {
+    "id": 5,
+    "word": "meeting",
+    "phonetic": "/ˈmiːtɪŋ/",
+    "partOfSpeech": "n.",
+    "meaning": "会议",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Meetings",
+    "status": "candidate"
+  },
+  {
+    "id": 6,
+    "word": "schedule",
+    "phonetic": "/ˈskedʒuːl/",
+    "partOfSpeech": "n.; v.",
+    "meaning": "日程；安排",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Planning",
+    "status": "candidate"
+  },
+  {
+    "id": 7,
+    "word": "report",
+    "phonetic": "/rɪˈpɔːrt/",
+    "partOfSpeech": "n.; v.",
+    "meaning": "报告；汇报",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Office & Work",
+    "status": "candidate"
+  },
+  {
+    "id": 8,
+    "word": "customer",
+    "phonetic": "/ˈkʌstəmər/",
+    "partOfSpeech": "n.",
+    "meaning": "顾客；客户",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Customer Service",
+    "status": "candidate"
+  },
+  {
+    "id": 9,
+    "word": "order",
+    "phonetic": "/ˈɔːrdər/",
+    "partOfSpeech": "n.; v.",
+    "meaning": "订单；订购",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Purchasing",
+    "status": "candidate"
+  },
+  {
+    "id": 10,
+    "word": "price",
+    "phonetic": "/praɪs/",
+    "partOfSpeech": "n.",
+    "meaning": "价格",
+    "example": "",
+    "exampleTranslation": "",
+    "level": 400,
+    "topic": "Sales",
+    "status": "candidate"
+  }
+]
