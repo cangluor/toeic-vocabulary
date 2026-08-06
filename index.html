@@ -10,8 +10,18 @@
   <main class="app">
     <header class="topbar">
       <h1>TOEIC 单词循环</h1>
-      <button id="resetBtn" class="link-btn" type="button">重置当前档</button>
+      <button id="syncSettingsBtn" class="link-btn" type="button">同步设置</button>
     </header>
+
+    <section id="syncPanel" class="sync-panel hidden">
+      <label>Worker 地址<input id="apiUrlInput" type="url" placeholder="https://toeic-progress.xxxx.workers.dev"></label>
+      <label>同步码<input id="syncCodeInput" type="password" minlength="8" autocomplete="off" placeholder="至少8位，仅自己知道"></label>
+      <div class="sync-actions">
+        <button id="connectBtn" type="button">连接并读取云端进度</button>
+        <button id="disconnectBtn" class="secondary" type="button">断开同步</button>
+      </div>
+      <p id="syncStatus" class="sync-status">未连接</p>
+    </section>
 
     <section class="level-panel" aria-label="词库等级">
       <button class="level-btn active" data-level="400" type="button">400分</button>
@@ -54,6 +64,10 @@
       </div>
     </section>
 
+    <footer class="footer-actions">
+      <button id="resetBtn" class="link-btn" type="button">重置当前档</button>
+      <span id="cloudIndicator">仅保存在本机</span>
+    </footer>
     <p id="errorText" class="error hidden"></p>
   </main>
   <script src="app.js"></script>
