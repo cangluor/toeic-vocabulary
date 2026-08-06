@@ -13,8 +13,9 @@
       <h1>TOEIC 单词循环 <small style="font-size:.65rem;color:#6b7280">v6</small></h1>
     </header>
 
+    <button id="syncSettingsBtn" type="button" hidden></button>
     <details class="sync-panel">
-      <summary id="syncSettingsBtn" class="link-btn">同步设置</summary>
+      <summary class="link-btn">同步设置</summary>
       <div id="syncPanel">
         <label>Worker 地址<input id="apiUrlInput" type="url" placeholder="https://toeic-progress.xxxx.workers.dev"></label>
         <label>同步码<input id="syncCodeInput" type="password" minlength="8" autocomplete="off" placeholder="至少8位，仅自己知道"></label>
