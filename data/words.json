@@ -1,13 +1,26 @@
 {
-  "level": 400,
-  "count": 400,
+  "levels": {
+    "400": {
+      "count": 400,
+      "parts": [
+        "400/words-001-100.csv",
+        "400/words-101-200.csv",
+        "400/words-201-300.csv",
+        "400/words-301-400.csv"
+      ]
+    },
+    "600": {
+      "newWordCount": 350,
+      "cumulativeCount": 750,
+      "parts": [
+        "600/words-401-500.csv",
+        "600/words-501-600.csv",
+        "600/words-601-700.csv",
+        "600/words-701-750.csv"
+      ]
+    }
+  },
   "format": "csv-parts",
-  "parts": [
-    "400/words-001-100.csv",
-    "400/words-101-200.csv",
-    "400/words-201-300.csv",
-    "400/words-301-400.csv"
-  ],
   "examplesIncluded": false,
-  "notes": "400分词汇选择、音标、词性、中文释义和主题已完成；例句将在下一轮补充。"
+  "notes": "400分基础词400个、600分新增词350个，共计750个。音标为候选美式IPA，后续继续复核。"
 }
