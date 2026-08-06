@@ -1,0 +1,101 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+201,position,/pəˈzɪʃən/,n.,职位；位置,400,Human Resources
+202,career,/kɚˈɪr/,n.,职业生涯,400,Human Resources
+203,apply,/əˈplaɪ/,v.,申请；应用,400,Human Resources
+204,application,/æpləˈkeɪʃən/,n.,申请；申请表,400,Human Resources
+205,resume,/rɪˈzum/,n.,简历,400,Human Resources
+206,candidate,/ˈkændədeɪt/,n.,候选人；应聘者,400,Human Resources
+207,hire,/ˈhaɪɚ/,n./v.,雇用；租用,400,Human Resources
+208,worker,/ˈwɝkɚ/,n.,工人；工作人员,400,Human Resources
+209,salary,/ˈsælɚi/,n.,薪水,400,Human Resources
+210,wage,/ˈweɪdʒ/,n.,工资,400,Human Resources
+211,benefit,/ˈbɛnəfɪt/,n./v.,福利；使受益,400,Human Resources
+212,vacation,/veɪˈkeɪʃən/,n.,休假,400,Human Resources
+213,holiday,/ˈhɑlədeɪ/,n.,假日,400,Human Resources
+214,experience,/ɪˈkspɪriəns/,n./v.,经验；经历,400,Human Resources
+215,skill,/ˈskɪl/,n.,技能,400,Human Resources
+216,ability,/əˈbɪləti/,n.,能力,400,Human Resources
+217,education,/ɛdʒəˈkeɪʃən/,n.,教育；学历,400,Human Resources
+218,successful,/səˈksɛsfəl/,adj.,成功的,400,Human Resources
+219,responsible,/riˈspɑnsəbəl/,adj.,负责的,400,Human Resources
+220,professional,/prəˈfɛʃənəl/,adj./n.,专业的；专业人士,400,Human Resources
+221,business,/ˈbɪznəs/,n.,商业；业务,400,Company Operations
+222,industry,/ˈɪndəstri/,n.,行业,400,Company Operations
+223,factory,/ˈfæktɚi/,n.,工厂,400,Company Operations
+224,produce,/prəˈdus/,v.,生产；制造,400,Company Operations
+225,production,/prəˈdʌkʃən/,n.,生产；产量,400,Company Operations
+226,process,/ˈprɑsɛs/,n./v.,流程；处理,400,Company Operations
+227,manage,/ˈmænədʒ/,v.,管理,400,Company Operations
+228,control,/kəˈntroʊl/,n./v.,控制；管理,400,Company Operations
+229,support,/səˈpɔrt/,n./v.,支持,400,Company Operations
+230,improve,/ɪˈmpruv/,v.,改善；提高,400,Company Operations
+231,increase,/ɪˈnkris/,n./v.,增加；提高,400,Company Operations
+232,reduce,/rəˈdus/,v.,减少,400,Company Operations
+233,develop,/dɪˈvɛləp/,v.,开发；发展,400,Company Operations
+234,create,/kriˈeɪt/,v.,创造；建立,400,Company Operations
+235,provide,/prəˈvaɪd/,v.,提供,400,Company Operations
+236,need,/ˈnid/,n./v.,需要,400,Company Operations
+237,require,/riˈkwaɪɚ/,v.,需要；要求,400,Company Operations
+238,result,/rɪˈzʌlt/,n./v.,结果；导致,400,Company Operations
+239,goal,/ˈɡoʊl/,n.,目标,400,Company Operations
+240,success,/səˈksɛs/,n.,成功,400,Company Operations
+241,advertisement,/æˈdvɝtəzmənt/,n.,广告,400,Marketing & Advertising
+242,advertise,/ˈædvɚtaɪz/,v.,做广告；宣传,400,Marketing & Advertising
+243,campaign,/kæˈmpeɪn/,n.,宣传活动；活动,400,Marketing & Advertising
+244,promotion,/prəˈmoʊʃən/,n.,促销；晋升,400,Marketing & Advertising
+245,brochure,/broʊˈʃʊr/,n.,宣传册,400,Marketing & Advertising
+246,catalog,/ˈkætəlɔɡ/,n.,目录；商品目录,400,Marketing & Advertising
+247,survey,/sɚˈveɪ/,n./v.,调查,400,Marketing & Advertising
+248,research,/riˈsɝtʃ/,n./v.,研究；调查,400,Marketing & Advertising
+249,sample,/ˈsæmpəl/,n.,样品；样本,400,Marketing & Advertising
+250,design,/dɪˈzaɪn/,n./v.,设计,400,Marketing & Advertising
+251,display,/dɪˈspleɪ/,n./v.,展示；显示,400,Marketing & Advertising
+252,sign,/ˈsaɪn/,n./v.,标志；签署,400,Marketing & Advertising
+253,logo,/ˈloʊɡoʊ/,n.,标志；商标,400,Marketing & Advertising
+254,media,/ˈmidiə/,n.,媒体,400,Marketing & Advertising
+255,public,/ˈpʌblɪk/,adj./n.,公共的；公众,400,Marketing & Advertising
+256,introduce,/ɪntrəˈdus/,v.,介绍；推出,400,Marketing & Advertising
+257,launch,/ˈlɔntʃ/,n./v.,发布；推出,400,Marketing & Advertising
+258,attract,/əˈtrækt/,v.,吸引,400,Marketing & Advertising
+259,choose,/ˈtʃuz/,v.,选择,400,Marketing & Advertising
+260,recommend,/rɛkəˈmɛnd/,v.,推荐,400,Marketing & Advertising
+261,bank,/ˈbæŋk/,n.,银行,400,Banking & Finance
+262,money,/ˈmʌni/,n.,钱；资金,400,Banking & Finance
+263,finance,/fəˈnæns/,n./v.,金融；筹资,400,Banking & Finance
+264,loan,/ˈloʊn/,n.,贷款,400,Banking & Finance
+265,interest,/ˈɪntrəst/,n.,利息；兴趣,400,Banking & Finance
+266,rate,/ˈreɪt/,n.,比率；价格,400,Banking & Finance
+267,income,/ˈɪnkʌm/,n.,收入,400,Banking & Finance
+268,expense,/ɪˈkspɛns/,n.,费用；开支,400,Banking & Finance
+269,profit,/ˈprɑfət/,n.,利润,400,Banking & Finance
+270,loss,/ˈlɔs/,n.,损失；亏损,400,Banking & Finance
+271,value,/ˈvælju/,n.,价值,400,Banking & Finance
+272,spend,/ˈspɛnd/,v.,花费,400,Banking & Finance
+273,invest,/ɪˈnvɛst/,v.,投资,400,Banking & Finance
+274,borrow,/ˈbɑroʊ/,v.,借入,400,Banking & Finance
+275,lend,/ˈlɛnd/,v.,借出,400,Banking & Finance
+276,currency,/ˈkɝənsi/,n.,货币,400,Banking & Finance
+277,exchange,/ɪˈkstʃeɪndʒ/,n./v.,兑换；交换,400,Banking & Finance
+278,financial,/fəˈnænʃəl/,adj.,财务的；金融的,400,Banking & Finance
+279,cheap,/ˈtʃip/,adj.,便宜的,400,Banking & Finance
+280,food,/ˈfud/,n.,食物,400,Food & Dining
+281,meal,/ˈmil/,n.,一餐；膳食,400,Food & Dining
+282,menu,/ˈmɛnju/,n.,菜单,400,Food & Dining
+283,lunch,/ˈlʌntʃ/,n.,午餐,400,Food & Dining
+284,dinner,/ˈdɪnɚ/,n.,晚餐,400,Food & Dining
+285,breakfast,/ˈbrɛkfəst/,n.,早餐,400,Food & Dining
+286,drink,/ˈdrɪŋk/,n./v.,饮料；喝,400,Food & Dining
+287,coffee,/ˈkɑfi/,n.,咖啡,400,Food & Dining
+288,water,/ˈwɔtɚ/,n.,水,400,Food & Dining
+289,table,/ˈteɪbəl/,n.,桌子；表格,400,Food & Dining
+290,serve,/ˈsɝv/,v.,服务；供应,400,Food & Dining
+291,waiter,/ˈweɪtɚ/,n.,服务员,400,Food & Dining
+292,kitchen,/ˈkɪtʃən/,n.,厨房,400,Food & Dining
+293,fresh,/ˈfrɛʃ/,adj.,新鲜的,400,Food & Dining
+294,delicious,/dɪˈlɪʃəs/,adj.,美味的,400,Food & Dining
+295,special,/ˈspɛʃəl/,adj./n.,特别的；特价菜,400,Food & Dining
+296,reserve,/rɪˈzɝv/,v.,预订；保留,400,Food & Dining
+297,clothes,/ˈkloʊðz/,n.,衣服,400,Shopping & Retail
+298,shirt,/ˈʃɝt/,n.,衬衫,400,Shopping & Retail
+299,shoe,/ˈʃu/,n.,鞋,400,Shopping & Retail
+300,color,/ˈkʌlɚ/,n.,颜色,400,Shopping & Retail
