@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TOEIC 单词循环</title>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <main class="app">
@@ -70,6 +70,31 @@
     </footer>
     <p id="errorText" class="error hidden"></p>
   </main>
-  <script src="app-v4.js"></script>
+
+  <script>
+    (function () {
+      var errorBox = document.getElementById('errorText');
+      function fail(message) {
+        document.getElementById('wordText').textContent = '启动失败';
+        errorBox.textContent = message;
+        errorBox.classList.remove('hidden');
+      }
+      window.addEventListener('error', function (event) {
+        fail('脚本错误：' + (event.message || '未知错误'));
+      });
+      fetch('app-v4.js?v=5', { cache: 'no-store' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('app-v4.js HTTP ' + response.status);
+          return response.text();
+        })
+        .then(function (source) {
+          if (!source || source.length < 100) throw new Error('app-v4.js 内容为空');
+          (0, eval)(source + '\n//# sourceURL=app-v4.js?v=5');
+        })
+        .catch(function (error) {
+          fail('应用脚本读取失败：' + error.message);
+        });
+    })();
+  </script>
 </body>
 </html>
