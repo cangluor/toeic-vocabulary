@@ -9,14 +9,27 @@
 - 认识、模糊、不认识三档判断
 - 模糊和不认识自动进入复习库
 - 学习进度、已掌握数和待复习数统计
-- 浏览器本地保存，各等级进度互不影响
-- 无登录、无服务器、无个人数据上传
+- 本地保存，并可通过 Cloudflare Worker + KV 在手机和电脑间同步
+- 不需要注册账号；使用自设同步码读取同一份进度
 
 网页文件位于仓库根目录：
 
 - `index.html`
 - `styles.css`
 - `app.js`
+
+Cloudflare Worker 位于 `worker/`：
+
+- `worker/src/index.js`
+- `worker/wrangler.jsonc`
+- `worker/package.json`
+
+Cloudflare连接仓库时使用：
+
+- Root directory：`worker`
+- Deploy command：`npx wrangler deploy`
+
+部署后，在网页的“同步设置”中填写 Worker 地址和至少8位同步码。手机与电脑填写相同内容即可读取同一份进度。
 
 ## 词库进度
 
@@ -29,31 +42,9 @@
 
 ## 数据文件
 
-### 400分词库
-
-位于 `data/400/`：
-
-- `words-001-100.csv`
-- `words-101-200.csv`
-- `words-201-300.csv`
-- `words-301-400.csv`
-
-### 600分新增词库
-
-位于 `data/600/`：
-
-- `words-401-500.csv`
-- `words-501-600.csv`
-- `words-601-700.csv`
-- `words-701-750.csv`
-
-### 700分新增词库
-
-位于 `data/700/`：
-
-- `words-751-850.csv`
-- `words-851-950.csv`
-- `words-951-1000.csv`
+- `data/400/`：编号1–400
+- `data/600/`：编号401–750
+- `data/700/`：编号751–1000
 
 ## 等级规则
 
@@ -72,12 +63,5 @@
 | meaning | 中文核心释义 |
 | level | 初次加入的等级 |
 | topic | TOEIC场景主题 |
-
-## 数据校验
-
-- 累计词数：1000
-- 编号范围：1–1000
-- 各等级文件编号连续
-- 当前字段无空值
 
 音标属于候选数据，后续仍需逐词复核。
