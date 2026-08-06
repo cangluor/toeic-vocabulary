@@ -1,0 +1,101 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+401,contract,/kɑntrækt/,n.,合同,600,Contracts & Legal
+402,agreement,/əɡrimənt/,n.,协议,600,Contracts & Legal
+403,clause,/klɔz/,n.,条款,600,Contracts & Legal
+404,term,/tɝm/,n.,条款；期限,600,Contracts & Legal
+405,procedure,/prəsidʒɚ/,n.,程序；手续,600,Contracts & Legal
+406,regulation,/rɛɡjəleɪʃən/,n.,规章；条例,600,Contracts & Legal
+407,legal,/liɡəl/,adj.,法律的,600,Contracts & Legal
+408,law,/lɔ/,n.,法律,600,Contracts & Legal
+409,approve,/əpruv/,v.,批准,600,Contracts & Legal
+410,approval,/əpruvəl/,n.,批准,600,Contracts & Legal
+411,authorize,/ɔθɚaɪz/,v.,授权,600,Contracts & Legal
+412,permission,/pɚmɪʃən/,n.,许可,600,Contracts & Legal
+413,obligation,/ɑbləɡeɪʃən/,n.,义务,600,Contracts & Legal
+414,responsibility,/rispɑnsəbɪləti/,n.,责任,600,Contracts & Legal
+415,complaint,/kəmpleɪnt/,n.,投诉,600,Contracts & Legal
+416,claim,/kleɪm/,n./v.,索赔；声称,600,Contracts & Legal
+417,guarantee,/ɡɛrənti/,n./v.,保证；担保,600,Contracts & Legal
+418,warranty,/wɔrənti/,n.,保修；保证书,600,Contracts & Legal
+419,valid,/vælɪd/,adj.,有效的,600,Contracts & Legal
+420,expire,/ɪkspaɪr/,v.,到期,600,Contracts & Legal
+421,renew,/rɪnu/,v.,续签；更新,600,Contracts & Legal
+422,terminate,/tɝməneɪt/,v.,终止,600,Contracts & Legal
+423,violate,/vaɪəleɪt/,v.,违反,600,Contracts & Legal
+424,recruit,/rəkrut/,v.,招聘,600,Human Resources
+425,recruitment,/rəkrutmənt/,n.,招聘,600,Human Resources
+426,employer,/ɛmplɔɪɚ/,n.,雇主,600,Human Resources
+427,employment,/ɛmplɔɪmənt/,n.,就业；雇用,600,Human Resources
+428,qualification,/kwɑləfəkeɪʃən/,n.,资格；资历,600,Human Resources
+429,qualified,/kwɑləfaɪd/,adj.,合格的,600,Human Resources
+430,reference,/rɛfɚəns/,n.,推荐人；参考,600,Human Resources
+431,personnel,/pɝsənɛl/,n.,人员；人事部门,600,Human Resources
+432,supervisor,/supɚvaɪzɚ/,n.,主管,600,Human Resources
+433,colleague,/kɑliɡ/,n.,同事,600,Human Resources
+434,coworker,/koʊwɝkɚ/,n.,同事,600,Human Resources
+435,assistant,/əsɪstənt/,n.,助理,600,Human Resources
+436,director,/dɚɛktɚ/,n.,主管；董事,600,Human Resources
+437,executive,/ɪɡzɛkjətɪv/,n./adj.,高管；执行的,600,Human Resources
+438,retire,/rɪtaɪr/,v.,退休,600,Human Resources
+439,retirement,/ritaɪɚmənt/,n.,退休,600,Human Resources
+440,resign,/rɪzaɪn/,v.,辞职,600,Human Resources
+441,transfer,/trænsfɝ/,n./v.,调任；转移,600,Human Resources
+442,overtime,/oʊvɚtaɪm/,n.,加班,600,Human Resources
+443,shift,/ʃɪft/,n.,轮班,600,Human Resources
+444,attendance,/ətɛndəns/,n.,出勤,600,Human Resources
+445,absence,/æbsəns/,n.,缺勤,600,Human Resources
+446,performance,/pɚfɔrməns/,n.,表现；业绩,600,Human Resources
+447,evaluation,/ɪvæljueɪʃən/,n.,评价；考核,600,Human Resources
+448,strategy,/strætədʒi/,n.,战略,600,Management & Strategy
+449,objective,/əbdʒɛktɪv/,n.,目标,600,Management & Strategy
+450,priority,/praɪɔrəti/,n.,优先事项,600,Management & Strategy
+451,initiative,/ɪnɪʃətɪv/,n.,举措；主动性,600,Management & Strategy
+452,leadership,/lidɚʃɪp/,n.,领导力,600,Management & Strategy
+453,organization,/ɔrɡənəzeɪʃən/,n.,组织；机构,600,Management & Strategy
+454,structure,/strʌktʃɚ/,n.,结构,600,Management & Strategy
+455,operation,/ɑpɚeɪʃən/,n.,运营；操作,600,Management & Strategy
+456,efficiency,/ɪfɪʃənsi/,n.,效率,600,Management & Strategy
+457,effective,/ɪfɛktɪv/,adj.,有效的,600,Management & Strategy
+458,efficient,/ɪfɪʃənt/,adj.,高效的,600,Management & Strategy
+459,productivity,/proʊdəktɪvəti/,n.,生产率,600,Management & Strategy
+460,resource,/risɔrs/,n.,资源,600,Management & Strategy
+461,allocate,/æləkeɪt/,v.,分配,600,Management & Strategy
+462,coordinate,/koʊɔrdənət/,v.,协调,600,Management & Strategy
+463,monitor,/mɑnətɚ/,v.,监控,600,Management & Strategy
+464,review,/rivju/,n./v.,审查；复习,600,Management & Strategy
+465,assess,/əsɛs/,v.,评估,600,Management & Strategy
+466,analyze,/ænəlaɪz/,v.,分析,600,Management & Strategy
+467,estimate,/ɛstəmət/,n./v.,估算,600,Management & Strategy
+468,forecast,/fɔrkæst/,n./v.,预测,600,Management & Strategy
+469,target,/tɑrɡət/,n./v.,目标；以…为目标,600,Management & Strategy
+470,achieve,/ətʃiv/,v.,实现,600,Management & Strategy
+471,maintain,/meɪnteɪn/,v.,维持；维护,600,Management & Strategy
+472,expand,/ɪkspænd/,v.,扩大,600,Management & Strategy
+473,revenue,/rɛvənu/,n.,营业收入,600,Finance & Accounting
+474,asset,/æsɛt/,n.,资产,600,Finance & Accounting
+475,liability,/laɪəbɪlɪti/,n.,负债；责任,600,Finance & Accounting
+476,capital,/kæpətəl/,n.,资本,600,Finance & Accounting
+477,fund,/fʌnd/,n./v.,资金；资助,600,Finance & Accounting
+478,investment,/ɪnvɛstmənt/,n.,投资,600,Finance & Accounting
+479,share,/ʃɛr/,n.,股份；份额,600,Finance & Accounting
+480,shareholder,/ʃɛrhoʊldɚ/,n.,股东,600,Finance & Accounting
+481,dividend,/dɪvɪdɛnd/,n.,股息,600,Finance & Accounting
+482,debt,/dɛt/,n.,债务,600,Finance & Accounting
+483,deposit,/dəpɑzɪt/,n./v.,存款；存入,600,Finance & Accounting
+484,withdraw,/wɪðdrɔ/,v.,取款；撤回,600,Finance & Accounting
+485,transaction,/trænzækʃən/,n.,交易,600,Finance & Accounting
+486,statement,/steɪtmənt/,n.,报表；陈述,600,Finance & Accounting
+487,audit,/ɔdɪt/,n./v.,审计,600,Finance & Accounting
+488,accounting,/əkaʊntɪŋ/,n.,会计,600,Finance & Accounting
+489,quarter,/kwɔrtɚ/,n.,季度；四分之一,600,Finance & Accounting
+490,annual,/ænjuəl/,adj.,年度的,600,Finance & Accounting
+491,monthly,/mʌnθli/,adj./adv.,每月的；每月,600,Finance & Accounting
+492,gross,/ɡroʊs/,adj.,总的；毛的,600,Finance & Accounting
+493,net,/nɛt/,adj./n.,净的；净额,600,Finance & Accounting
+494,margin,/mɑrdʒən/,n.,利润率；差额,600,Finance & Accounting
+495,funding,/fʌndɪŋ/,n.,资金,600,Finance & Accounting
+496,compensation,/kɑmpənseɪʃən/,n.,报酬；补偿,600,Finance & Accounting
+497,reimburse,/riɪmbɝs/,v.,报销；偿还,600,Finance & Accounting
+498,advertising,/ædvɚtaɪzɪŋ/,n.,广告活动,600,Marketing & Sales
+499,consumer,/kənsumɚ/,n.,消费者,600,Marketing & Sales
+500,audience,/ɑdiəns/,n.,受众,600,Marketing & Sales
