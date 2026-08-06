@@ -1,0 +1,101 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+601,connect,/kənɛkt/,v.,连接,600,Technology & IT
+602,compatible,/kəmpætəbəl/,adj.,兼容的,600,Technology & IT
+603,version,/vɝʒən/,n.,版本,600,Technology & IT
+604,upgrade,/əpɡreɪd/,n./v.,升级,600,Technology & IT
+605,backup,/bækʌp/,n./v.,备份,600,Technology & IT
+606,recover,/rɪkʌvɚ/,v.,恢复,600,Technology & IT
+607,privacy,/praɪvəsi/,n.,隐私,600,Technology & IT
+608,user,/juzɚ/,n.,用户,600,Technology & IT
+609,register,/rɛdʒɪstɚ/,n./v.,登记；注册,600,Technology & IT
+610,login,/lɔɡɪn/,n./v.,登录,600,Technology & IT
+611,browse,/braʊz/,v.,浏览,600,Technology & IT
+612,upload,/ʌploʊd/,n./v.,上传,600,Technology & IT
+613,attachment,/ətætʃmənt/,n.,附件,600,Technology & IT
+614,technical,/tɛknɪkəl/,adj.,技术的,600,Technology & IT
+615,manufacturing,/mænjəfæktʃɚɪŋ/,n.,制造业,600,Production & Quality
+616,assembly,/əsɛmbli/,n.,组装；装配,600,Production & Quality
+617,assemble,/əsɛmbəl/,v.,组装,600,Production & Quality
+618,output,/aʊtpʊt/,n.,产量；输出,600,Production & Quality
+619,defect,/difɛkt/,n.,缺陷,600,Production & Quality
+620,fault,/fɔlt/,n.,故障；过失,600,Production & Quality
+621,test,/tɛst/,n./v.,测试,600,Production & Quality
+622,measure,/mɛʒɚ/,n./v.,测量；措施,600,Production & Quality
+623,measurement,/mɛʒɚmənt/,n.,测量结果,600,Production & Quality
+624,specification,/spɛsɪfɪkeɪʃən/,n.,规格；说明,600,Production & Quality
+625,requirement,/rɪkwaɪrmənt/,n.,要求,600,Production & Quality
+626,standardize,/stændɚdaɪz/,v.,标准化,600,Production & Quality
+627,consistency,/kənsɪstənsi/,n.,一致性,600,Production & Quality
+628,reliable,/rɪlaɪəbəl/,adj.,可靠的,600,Production & Quality
+629,durable,/dʊrəbəl/,adj.,耐用的,600,Production & Quality
+630,accurate,/ækjɚət/,adj.,准确的,600,Production & Quality
+631,accuracy,/ækjɚəsi/,n.,准确性,600,Production & Quality
+632,improvement,/ɪmpruvmənt/,n.,改进,600,Production & Quality
+633,automate,/ɔtəmeɪt/,v.,自动化,600,Production & Quality
+634,machinery,/məʃinɚi/,n.,机械设备,600,Production & Quality
+635,laboratory,/læbrətɔri/,n.,实验室,600,Production & Quality
+636,correspondence,/kɔrəspɑndəns/,n.,通信；往来信件,600,Communication
+637,recipient,/rəsɪpiənt/,n.,收件人,600,Communication
+638,sender,/sɛndɚ/,n.,发件人,600,Communication
+639,subject,/səbdʒɛkt/,n.,主题；科目,600,Communication
+640,regarding,/rɪɡɑrdɪŋ/,prep.,关于,600,Communication
+641,inquiry,/ɪnkwaɪri/,n.,询问,600,Communication
+642,response,/rɪspɑns/,n.,回复；反应,600,Communication
+643,clarify,/klɛrəfaɪ/,v.,澄清,600,Communication
+644,mention,/mɛnʃən/,v.,提及,600,Communication
+645,notify,/noʊtəfaɪ/,v.,通知,600,Communication
+646,remind,/rimaɪnd/,v.,提醒,600,Communication
+647,apologize,/əpɑlədʒaɪz/,v.,道歉,600,Communication
+648,appreciate,/əpriʃieɪt/,v.,感谢；欣赏,600,Communication
+649,suggest,/sədʒɛst/,v.,建议,600,Communication
+650,advise,/ædvaɪz/,v.,建议；通知,600,Communication
+651,proposal,/prəpoʊzəl/,n.,提案,600,Communication
+652,instruction,/ɪnstrʌkʃən/,n.,指示；说明,600,Communication
+653,description,/dɪskrɪpʃən/,n.,描述,600,Communication
+654,announcement,/ənaʊnsmənt/,n.,公告,600,Communication
+655,publication,/pʌblɪkeɪʃən/,n.,出版物；发布,600,Communication
+656,newsletter,/nuzlɛtɚ/,n.,简报,600,Communication
+657,article,/ɑrtəkəl/,n.,文章；物品,600,Communication
+658,editor,/ɛdətɚ/,n.,编辑,600,Communication
+659,press,/prɛs/,n.,新闻界；印刷机,600,Communication
+660,postpone,/poʊstpoʊn/,v.,推迟,600,Meetings & Planning
+661,reschedule,/riskɛdʒul/,v.,重新安排,600,Meetings & Planning
+662,participate,/pɑrtɪsəpeɪt/,v.,参加,600,Meetings & Planning
+663,participant,/pɑrtɪsəpənt/,n.,参加者,600,Meetings & Planning
+664,speaker,/spikɚ/,n.,演讲者,600,Meetings & Planning
+665,session,/sɛʃən/,n.,会议；场次,600,Meetings & Planning
+666,venue,/vɛnju/,n.,会场；地点,600,Meetings & Planning
+667,registration,/rɛdʒɪstreɪʃən/,n.,登记；注册,600,Meetings & Planning
+668,organizer,/ɔrɡənaɪzɚ/,n.,组织者,600,Meetings & Planning
+669,arrangement,/ɚeɪndʒmənt/,n.,安排,600,Meetings & Planning
+670,availability,/əveɪləbɪləti/,n.,可用性；空闲时间,600,Meetings & Planning
+671,calendar,/kæləndɚ/,n.,日历；日程表,600,Meetings & Planning
+672,duration,/dʊreɪʃən/,n.,持续时间,600,Meetings & Planning
+673,period,/pɪriəd/,n.,期间,600,Meetings & Planning
+674,temporary,/tɛmpɚɛri/,adj.,临时的,600,Meetings & Planning
+675,permanent,/pɝmənənt/,adj.,永久的；正式的,600,Meetings & Planning
+676,immediate,/ɪmidiət/,adj.,立即的,600,Meetings & Planning
+677,upcoming,/ʌpkʌmɪŋ/,adj.,即将到来的,600,Meetings & Planning
+678,previous,/priviəs/,adj.,先前的,600,Meetings & Planning
+679,recent,/risənt/,adj.,最近的,600,Meetings & Planning
+680,frequent,/frikwənt/,adj.,频繁的,600,Meetings & Planning
+681,regular,/rɛɡjəlɚ/,adj.,定期的；常规的,600,Meetings & Planning
+682,occasion,/əkeɪʒən/,n.,场合；时机,600,Meetings & Planning
+683,ceremony,/sɛrəmoʊni/,n.,典礼,600,Meetings & Planning
+684,celebrate,/sɛləbreɪt/,v.,庆祝,600,Meetings & Planning
+685,procurement,/proʊkjʊrmənt/,n.,采购,600,Procurement
+686,bid,/bɪd/,n./v.,投标；出价,600,Procurement
+687,tender,/tɛndɚ/,n./adj.,投标；温和的,600,Procurement
+688,quote,/kwoʊt/,n./v.,报价；引用,600,Procurement
+689,bulk,/bʌlk/,n./adj.,大批；大量的,600,Procurement
+690,unit,/junət/,n.,单位；单件,600,Procurement
+691,evaluate,/ɪvæljueɪt/,v.,评估,600,Procurement
+692,comparison,/kəmpɛrəsən/,n.,比较,600,Procurement
+693,selection,/səlɛkʃən/,n.,选择,600,Procurement
+694,issue,/ɪʃu/,n./v.,问题；发布,600,Procurement
+695,obtain,/əbteɪn/,v.,获得,600,Procurement
+696,acquire,/əkwaɪɚ/,v.,取得；收购,600,Procurement
+697,source,/sɔrs/,n./v.,来源；采购,600,Procurement
+698,insurance,/ɪnʃʊrəns/,n.,保险,600,Customer Service
+699,coverage,/kʌvɚədʒ/,n.,保险范围；覆盖范围,600,Customer Service
+700,premium,/primiəm/,n.,保险费；优质的,600,Customer Service
