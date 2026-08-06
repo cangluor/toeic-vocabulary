@@ -1,0 +1,101 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+301,small,/ˈsmɔl/,adj.,小的,400,Shopping & Retail
+302,large,/ˈlɑrdʒ/,adj.,大的,400,Shopping & Retail
+303,fit,/ˈfɪt/,n./v.,合身；适合,400,Shopping & Retail
+304,try,/ˈtraɪ/,v.,尝试；试穿,400,Shopping & Retail
+305,wear,/ˈwɛr/,v.,穿；佩戴,400,Shopping & Retail
+306,cashier,/kæˈʃɪr/,n.,收银员,400,Shopping & Retail
+307,health,/ˈhɛlθ/,n.,健康,400,Health & Safety
+308,hospital,/ˈhɑspɪtəl/,n.,医院,400,Health & Safety
+309,doctor,/ˈdɑktɚ/,n.,医生,400,Health & Safety
+310,patient,/ˈpeɪʃənt/,n./adj.,患者；耐心的,400,Health & Safety
+311,medicine,/ˈmɛdəsən/,n.,药物,400,Health & Safety
+312,medical,/ˈmɛdəkəl/,adj.,医疗的,400,Health & Safety
+313,sick,/ˈsɪk/,adj.,生病的,400,Health & Safety
+314,safe,/ˈseɪf/,adj.,安全的,400,Health & Safety
+315,safety,/ˈseɪfti/,n.,安全,400,Health & Safety
+316,danger,/ˈdeɪndʒɚ/,n.,危险,400,Health & Safety
+317,accident,/ˈæksədənt/,n.,事故,400,Health & Safety
+318,emergency,/ɪˈmɝdʒənsi/,n.,紧急情况,400,Health & Safety
+319,care,/ˈkɛr/,n./v.,照顾；关心,400,Health & Safety
+320,help,/ˈhɛlp/,n./v.,帮助,400,Health & Safety
+321,rest,/ˈrɛst/,n./v.,休息,400,Health & Safety
+322,clean,/ˈklin/,adj./v.,干净的；清洁,400,Health & Safety
+323,protect,/prəˈtɛkt/,v.,保护,400,Health & Safety
+324,rule,/ˈrul/,n.,规则,400,Health & Safety
+325,warning,/ˈwɔrnɪŋ/,n.,警告,400,Health & Safety
+326,maintenance,/ˈmeɪntənəns/,n.,维护；保养,400,Maintenance & Services
+327,fix,/ˈfɪks/,v.,修理；解决,400,Maintenance & Services
+328,replace,/riˈpleɪs/,v.,更换；代替,400,Maintenance & Services
+329,broken,/ˈbroʊkən/,adj.,损坏的,400,Maintenance & Services
+330,inspect,/ɪˈnspɛkt/,v.,检查,400,Maintenance & Services
+331,condition,/kəˈndɪʃən/,n.,状态；条件,400,Maintenance & Services
+332,part,/ˈpɑrt/,n.,零件；部分,400,Maintenance & Services
+333,tool,/ˈtul/,n.,工具,400,Maintenance & Services
+334,stop,/ˈstɑp/,n./v.,停止,400,Maintenance & Services
+335,damage,/ˈdæmədʒ/,n./v.,损坏,400,Maintenance & Services
+336,request,/rɪˈkwɛst/,n./v.,请求,400,Maintenance & Services
+337,solution,/səˈluʃən/,n.,解决方案,400,Maintenance & Services
+338,complete,/kəˈmplit/,adj./v.,完整的；完成,400,Maintenance & Services
+339,form,/ˈfɔrm/,n.,表格；形式,400,Documents & Forms
+340,name,/ˈneɪm/,n./v.,姓名；命名,400,Documents & Forms
+341,number,/ˈnʌmbɚ/,n.,号码；数字,400,Documents & Forms
+342,signature,/ˈsɪɡnətʃɚ/,n.,签名,400,Documents & Forms
+343,write,/ˈraɪt/,v.,写,400,Documents & Forms
+344,read,/ˈrɛd/,v.,阅读,400,Documents & Forms
+345,fill,/ˈfɪl/,v.,填写；装满,400,Documents & Forms
+346,enter,/ˈɛntɚ/,v.,输入；进入,400,Documents & Forms
+347,select,/səˈlɛkt/,v.,选择,400,Documents & Forms
+348,attach,/əˈtætʃ/,v.,附上,400,Documents & Forms
+349,submit,/səˈbmɪt/,v.,提交,400,Documents & Forms
+350,original,/ɚˈɪdʒənəl/,adj./n.,原始的；原件,400,Documents & Forms
+351,page,/ˈpeɪdʒ/,n.,页,400,Documents & Forms
+352,section,/ˈsɛkʃən/,n.,部分；章节,400,Documents & Forms
+353,list,/ˈlɪst/,n./v.,清单；列出,400,Documents & Forms
+354,record,/rəˈkɔrd/,n./v.,记录,400,Documents & Forms
+355,note,/ˈnoʊt/,n./v.,笔记；注意,400,Documents & Forms
+356,make,/ˈmeɪk/,v.,制作；使得,400,General Actions
+357,take,/ˈteɪk/,v.,拿；花费,400,General Actions
+358,give,/ˈɡɪv/,v.,给予,400,General Actions
+359,get,/ˈɡɛt/,v.,获得；变得,400,General Actions
+360,find,/ˈfaɪnd/,v.,找到；发现,400,General Actions
+361,look,/ˈlʊk/,n./v.,看；外观,400,General Actions
+362,see,/ˈsi/,v.,看见；明白,400,General Actions
+363,show,/ˈʃoʊ/,n./v.,展示；表明,400,General Actions
+364,keep,/ˈkip/,v.,保持；保留,400,General Actions
+365,put,/ˈpʊt/,v.,放置,400,General Actions
+366,bring,/ˈbrɪŋ/,v.,带来,400,General Actions
+367,move,/ˈmuv/,n./v.,移动；搬迁,400,General Actions
+368,wait,/ˈweɪt/,n./v.,等待,400,General Actions
+369,follow,/ˈfɑloʊ/,v.,遵循；跟随,400,General Actions
+370,remember,/rɪˈmɛmbɚ/,v.,记得,400,General Actions
+371,understand,/ʌndɚˈstænd/,v.,理解,400,General Actions
+372,know,/ˈnoʊ/,v.,知道；了解,400,General Actions
+373,learn,/ˈlɝn/,v.,学习,400,General Actions
+374,decide,/dɪˈsaɪd/,v.,决定,400,General Actions
+375,agree,/əˈɡri/,v.,同意,400,General Actions
+376,accept,/æˈksɛpt/,v.,接受,400,General Actions
+377,add,/ˈæd/,v.,添加；增加,400,General Actions
+378,allow,/əˈlaʊ/,v.,允许,400,General Actions
+379,arrange,/ɚˈeɪndʒ/,v.,安排；整理,400,Time & Planning
+380,become,/bɪˈkʌm/,v.,成为,400,General Actions
+381,begin,/bɪˈɡɪn/,v.,开始,400,General Actions
+382,believe,/bɪˈliv/,v.,相信,400,General Actions
+383,carry,/ˈkæri/,v.,携带；搬运,400,Shipping & Delivery
+384,collect,/kəˈlɛkt/,v.,收集；领取,400,General Actions
+385,continue,/kəˈntɪnju/,v.,继续,400,General Actions
+386,correct,/kɚˈɛkt/,adj./v.,正确的；纠正,400,Documents & Forms
+387,cover,/ˈkʌvɚ/,n./v.,覆盖；封面,400,Documents & Forms
+388,cut,/ˈkʌt/,n./v.,切；削减,400,Company Operations
+389,different,/ˈdɪfɚənt/,adj.,不同的,400,General Actions
+390,easy,/ˈizi/,adj.,容易的,400,General Actions
+391,enjoy,/ɛˈndʒɔɪ/,v.,享受；喜欢,400,General Actions
+392,enough,/ɪˈnʌf/,adj./adv.,足够的；充分地,400,General Actions
+393,expect,/ɪˈkspɛkt/,v.,期待；预计,400,General Actions
+394,important,/ɪˈmpɔrtənt/,adj.,重要的,400,General Actions
+395,include,/ɪˈnklud/,v.,包括,400,Documents & Forms
+396,last,/ˈlæst/,adj./v.,最后的；持续,400,Time & Planning
+397,main,/ˈmeɪn/,adj.,主要的,400,General Actions
+398,new,/ˈnu/,adj.,新的,400,General Actions
+399,next,/ˈnɛkst/,adj./adv.,下一个；接下来,400,Time & Planning
+400,old,/ˈoʊld/,adj.,旧的；年长的,400,General Actions
