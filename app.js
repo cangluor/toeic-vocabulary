@@ -1,12 +1,11 @@
 const LEVEL_FILES={400:["data/400/words-001-100.csv","data/400/words-101-200.csv","data/400/words-201-300.csv","data/400/words-301-400.csv"],600:["data/400/words-001-100.csv","data/400/words-101-200.csv","data/400/words-201-300.csv","data/400/words-301-400.csv","data/600/words-401-500.csv","data/600/words-501-600.csv","data/600/words-601-700.csv","data/600/words-701-750.csv"],700:["data/400/words-001-100.csv","data/400/words-101-200.csv","data/400/words-201-300.csv","data/400/words-301-400.csv","data/600/words-401-500.csv","data/600/words-501-600.csv","data/600/words-601-700.csv","data/600/words-701-750.csv","data/700/words-751-850.csv","data/700/words-851-950.csv","data/700/words-951-1000.csv"]};
+const defaultState=()=>({ratings:{},studyOrder:[],studyCursor:0,reviewOrder:[],reviewCursor:0});
 const el=id=>document.getElementById(id);
 const ui={progressText:el("progressText"),masteredText:el("masteredText"),reviewText:el("reviewText"),progressBar:el("progressBar"),card:el("card"),modeBadge:el("modeBadge"),wordIndex:el("wordIndex"),wordText:el("wordText"),phoneticText:el("phoneticText"),answer:el("answer"),partText:el("partText"),meaningText:el("meaningText"),topicText:el("topicText"),revealBtn:el("revealBtn"),ratingButtons:el("ratingButtons"),donePanel:el("donePanel"),doneTitle:el("doneTitle"),doneText:el("doneText"),reviewBtn:el("reviewBtn"),restartBtn:el("restartBtn"),resetBtn:el("resetBtn"),errorText:el("errorText"),syncSettingsBtn:el("syncSettingsBtn"),syncPanel:el("syncPanel"),apiUrlInput:el("apiUrlInput"),syncCodeInput:el("syncCodeInput"),connectBtn:el("connectBtn"),disconnectBtn:el("disconnectBtn"),syncStatus:el("syncStatus"),cloudIndicator:el("cloudIndicator")};
 let level=400,words=[],queue=[],cursor=0,mode="study",revealed=false,state=defaultState(),syncTimer=null,syncing=false;
 const stateKey=l=>`toeic-progress-${l}`;
-const defaultState=()=>({ratings:{},studyOrder:[],studyCursor:0,reviewOrder:[],reviewCursor:0});
 const syncConfig={apiUrl:localStorage.getItem("toeic-sync-api")||"",code:localStorage.getItem("toeic-sync-code")||""};
 ui.apiUrlInput.value=syncConfig.apiUrl;ui.syncCodeInput.value=syncConfig.code;
-
 function parseCsv(text){const rows=[];let row=[],cell="",quoted=false;for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];if(c==='"'&&quoted&&n==='"'){cell+='"';i++;continue}if(c==='"'){quoted=!quoted;continue}if(c===','&&!quoted){row.push(cell);cell="";continue}if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&n==='\n')i++;row.push(cell);if(row.some(v=>v!==""))rows.push(row);row=[];cell="";continue}cell+=c}if(cell||row.length){row.push(cell);rows.push(row)}const headers=rows.shift().map(v=>v.trim());return rows.map(values=>Object.fromEntries(headers.map((h,i)=>[h,(values[i]||"").trim()]))) }
 async function loadWords(){try{const parts=await Promise.all(LEVEL_FILES[level].map(async path=>{const r=await fetch(path);if(!r.ok)throw new Error(path);return parseCsv(await r.text())}));words=parts.flat().map(w=>({...w,id:Number(w.id),level:Number(w.level)}));if(!words.length)throw new Error("词库为空");loadState();startSavedMode();hideError()}catch(err){showError(`词库读取失败：${err.message}`)}}
 function loadState(){try{state={...defaultState(),...JSON.parse(localStorage.getItem(stateKey(level))||"{}")}}catch{state=defaultState()}state.ratings=state.ratings||{}}
@@ -26,7 +25,6 @@ function switchLevel(next){level=Number(next);document.querySelectorAll(".level-
 function resetCurrent(){if(!confirm(`确定重置 ${level} 分档的全部学习记录吗？`))return;localStorage.removeItem(stateKey(level));state=defaultState();startStudy(true)}
 function showError(msg){ui.errorText.textContent=msg;ui.errorText.classList.remove("hidden")}
 function hideError(){ui.errorText.classList.add("hidden")}
-
 function normalizedApiUrl(){return syncConfig.apiUrl.trim().replace(/\/+$/,"")}
 function hasSync(){return Boolean(normalizedApiUrl()&&syncConfig.code.length>=8)}
 function setSyncStatus(text,ok=false){ui.syncStatus.textContent=text;ui.cloudIndicator.textContent=ok?"云端同步已连接":"仅保存在本机"}
@@ -37,7 +35,6 @@ async function connectCloud(){syncConfig.apiUrl=ui.apiUrlInput.value.trim();sync
 function disconnectCloud(){syncConfig.apiUrl="";syncConfig.code="";localStorage.removeItem("toeic-sync-api");localStorage.removeItem("toeic-sync-code");ui.apiUrlInput.value="";ui.syncCodeInput.value="";setSyncStatus("已断开云端同步")}
 function scheduleCloudSave(){if(!hasSync())return;clearTimeout(syncTimer);syncTimer=setTimeout(saveCloud,500)}
 async function saveCloud(){if(!hasSync()||syncing)return;syncing=true;ui.cloudIndicator.textContent="正在同步…";try{await cloudRequest("PUT",collectAllProgress());setSyncStatus("云端已同步",true)}catch(err){ui.cloudIndicator.textContent="同步失败，本机已保存";ui.syncStatus.textContent=`同步失败：${err.message}`}finally{syncing=false}}
-
 document.querySelectorAll(".level-btn").forEach(b=>b.addEventListener("click",()=>switchLevel(b.dataset.level)));
 ui.revealBtn.addEventListener("click",reveal);ui.card.addEventListener("click",e=>{if(e.target===ui.card||e.target===ui.wordText||e.target===ui.phoneticText)reveal()});ui.card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();reveal()}});document.querySelectorAll(".rating").forEach(b=>b.addEventListener("click",()=>rate(b.dataset.rating)));ui.reviewBtn.addEventListener("click",startReview);ui.restartBtn.addEventListener("click",()=>startStudy(true));ui.resetBtn.addEventListener("click",resetCurrent);ui.syncSettingsBtn.addEventListener("click",()=>ui.syncPanel.classList.toggle("hidden"));ui.connectBtn.addEventListener("click",connectCloud);ui.disconnectBtn.addEventListener("click",disconnectCloud);
 if(hasSync()){setSyncStatus("已保存同步设置，正在连接…");connectCloud()}else setSyncStatus("未连接");
