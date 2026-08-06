@@ -1,0 +1,101 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+751,boardroom,/ˈbɔrdruːm/,n.,董事会议室,700,Corporate Governance
+752,chairperson,/ˈtʃerˌpɝːsən/,n.,主席,700,Corporate Governance
+753,stakeholder,/ˈsteɪkˌhoʊldər/,n.,利益相关者,700,Corporate Governance
+754,governance,/ˈɡʌvərnəns/,n.,公司治理,700,Corporate Governance
+755,merger,/ˈmɝːdʒər/,n.,合并,700,Corporate Governance
+756,acquisition,/ˌækwəˈzɪʃən/,n.,收购,700,Corporate Governance
+757,subsidiary,/səbˈsɪdieri/,n.,子公司,700,Corporate Governance
+758,affiliate,/əˈfɪlieɪt/,n./v.,关联公司；使隶属,700,Corporate Governance
+759,headquarters,/ˈhedˌkwɔːrtərz/,n.,总部,700,Corporate Governance
+760,branch,/bræntʃ/,n.,分公司；分支,700,Corporate Governance
+761,corporation,/ˌkɔːrpəˈreɪʃən/,n.,公司；法人,700,Corporate Governance
+762,enterprise,/ˈentərpraɪz/,n.,企业,700,Corporate Governance
+763,partnership,/ˈpɑːrtnərʃɪp/,n.,合伙关系；合作关系,700,Corporate Governance
+764,consortium,/kənˈsɔːrʃiəm/,n.,财团；联合体,700,Corporate Governance
+765,restructuring,/ˌriːˈstrʌktʃərɪŋ/,n.,重组,700,Corporate Governance
+766,diversification,/daɪˌvɝːsəfəˈkeɪʃən/,n.,多元化,700,Corporate Governance
+767,consolidation,/kənˌsɑːləˈdeɪʃən/,n.,合并；整合,700,Corporate Governance
+768,synergy,/ˈsɪnərdʒi/,n.,协同效应,700,Corporate Governance
+769,hierarchy,/ˈhaɪərɑːrki/,n.,层级制度,700,Corporate Governance
+770,jurisdiction,/ˌdʒʊrɪsˈdɪkʃən/,n.,司法管辖权,700,Corporate Governance
+771,incorporate,/ɪnˈkɔːrpəreɪt/,v.,成立公司；纳入,700,Corporate Governance
+772,dissolve,/dɪˈzɑːlv/,v.,解散；终止,700,Corporate Governance
+773,appoint,/əˈpɔɪnt/,v.,任命,700,Corporate Governance
+774,nominate,/ˈnɑːməneɪt/,v.,提名,700,Corporate Governance
+775,succession,/səkˈseʃən/,n.,继任；接替,700,Corporate Governance
+776,ledger,/ˈledʒər/,n.,分类账,700,Advanced Finance
+777,receivable,/rɪˈsiːvəbəl/,n.,应收款,700,Advanced Finance
+778,payable,/ˈpeɪəbəl/,n.,应付款,700,Advanced Finance
+779,depreciation,/dɪˌpriːʃiˈeɪʃən/,n.,折旧,700,Advanced Finance
+780,amortization,/əˌmɔːrtəˈzeɪʃən/,n.,摊销,700,Advanced Finance
+781,liquidity,/lɪˈkwɪdəti/,n.,流动性,700,Advanced Finance
+782,solvency,/ˈsɑːlvənsi/,n.,偿付能力,700,Advanced Finance
+783,equity,/ˈekwəti/,n.,股本；权益,700,Advanced Finance
+784,portfolio,/pɔːrtˈfoʊlioʊ/,n.,投资组合,700,Advanced Finance
+785,brokerage,/ˈbroʊkərɪdʒ/,n.,经纪业务；佣金,700,Advanced Finance
+786,bond,/bɑːnd/,n.,债券,700,Advanced Finance
+787,mortgage,/ˈmɔːrɡɪdʒ/,n.,抵押贷款,700,Advanced Finance
+788,collateral,/kəˈlætərəl/,n.,抵押品,700,Advanced Finance
+789,principal,/ˈprɪnsəpəl/,n.,本金；负责人,700,Advanced Finance
+790,maturity,/məˈtʃʊrəti/,n.,到期；成熟,700,Advanced Finance
+791,yield,/jiːld/,n./v.,收益率；产生,700,Advanced Finance
+792,inflation,/ɪnˈfleɪʃən/,n.,通货膨胀,700,Advanced Finance
+793,fluctuation,/ˌflʌktʃuˈeɪʃən/,n.,波动,700,Advanced Finance
+794,valuation,/ˌvæljuˈeɪʃən/,n.,估值,700,Advanced Finance
+795,profitability,/ˌprɑːfətəˈbɪləti/,n.,盈利能力,700,Advanced Finance
+796,turnover,/ˈtɝːnˌoʊvər/,n.,营业额；人员流动率,700,Advanced Finance
+797,writeoff,/ˈraɪtˌɔːf/,n.,核销；注销,700,Advanced Finance
+798,remittance,/rɪˈmɪtəns/,n.,汇款,700,Advanced Finance
+799,escrow,/ˈeskroʊ/,n.,第三方托管,700,Advanced Finance
+800,diversify,/daɪˈvɝːsəfaɪ/,v.,使多元化,700,Advanced Finance
+801,economy,/ɪˈkɑːnəmi/,n.,经济,700,Economics & Markets
+802,economic,/ˌiːkəˈnɑːmɪk/,adj.,经济的,700,Economics & Markets
+803,recession,/rɪˈseʃən/,n.,经济衰退,700,Economics & Markets
+804,recovery,/rɪˈkʌvəri/,n.,复苏；恢复,700,Economics & Markets
+805,growth,/ɡroʊθ/,n.,增长,700,Economics & Markets
+806,stagnation,/stæɡˈneɪʃən/,n.,停滞,700,Economics & Markets
+807,volatility,/ˌvɑːləˈtɪləti/,n.,波动性,700,Economics & Markets
+808,commodity,/kəˈmɑːdəti/,n.,商品；大宗商品,700,Economics & Markets
+809,index,/ˈɪndeks/,n.,指数,700,Economics & Markets
+810,indicator,/ˈɪndəkeɪtər/,n.,指标,700,Economics & Markets
+811,consumption,/kənˈsʌmpʃən/,n.,消费,700,Economics & Markets
+812,purchasing,/ˈpɝːtʃəsɪŋ/,n.,采购；购买,700,Economics & Markets
+813,shortage,/ˈʃɔːrtɪdʒ/,n.,短缺,700,Economics & Markets
+814,scarcity,/ˈskersəti/,n.,稀缺,700,Economics & Markets
+815,monopoly,/məˈnɑːpəli/,n.,垄断,700,Economics & Markets
+816,regulator,/ˈreɡjəleɪtər/,n.,监管机构,700,Economics & Markets
+817,subsidy,/ˈsʌbsədi/,n.,补贴,700,Economics & Markets
+818,tariff,/ˈterɪf/,n.,关税,700,Economics & Markets
+819,quota,/ˈkwoʊtə/,n.,配额,700,Economics & Markets
+820,domestic,/dəˈmestɪk/,adj.,国内的,700,Economics & Markets
+821,overseas,/ˌoʊvərˈsiːz/,adj./adv.,海外的；在海外,700,Economics & Markets
+822,emerging,/ɪˈmɝːdʒɪŋ/,adj.,新兴的,700,Economics & Markets
+823,saturate,/ˈsætʃəreɪt/,v.,使饱和,700,Economics & Markets
+824,penetration,/ˌpenəˈtreɪʃən/,n.,市场渗透；穿透,700,Economics & Markets
+825,outlook,/ˈaʊtlʊk/,n.,前景；展望,700,Economics & Markets
+826,litigation,/ˌlɪtəˈɡeɪʃən/,n.,诉讼,700,Legal & Risk
+827,arbitration,/ˌɑːrbəˈtreɪʃən/,n.,仲裁,700,Legal & Risk
+828,dispute,/dɪˈspjuːt/,n./v.,争议；争论,700,Legal & Risk
+829,settlement,/ˈsetəlmənt/,n.,和解；结算,700,Legal & Risk
+830,penalty,/ˈpenəlti/,n.,处罚；罚金,700,Legal & Risk
+831,fine,/faɪn/,n./v.,罚款,700,Legal & Risk
+832,breach,/briːtʃ/,n./v.,违约；违反,700,Legal & Risk
+833,fraud,/frɔːd/,n.,欺诈,700,Legal & Risk
+834,negligence,/ˈneɡlɪdʒəns/,n.,疏忽,700,Legal & Risk
+835,misconduct,/ˌmɪsˈkɑːndʌkt/,n.,不当行为,700,Legal & Risk
+836,disclosure,/dɪsˈkloʊʒər/,n.,披露,700,Legal & Risk
+837,consent,/kənˈsent/,n./v.,同意,700,Legal & Risk
+838,waiver,/ˈweɪvər/,n.,弃权声明,700,Legal & Risk
+839,indemnity,/ɪnˈdemnəti/,n.,赔偿保障,700,Legal & Risk
+840,infringement,/ɪnˈfrɪndʒmənt/,n.,侵权,700,Legal & Risk
+841,patent,/ˈpætənt/,n.,专利,700,Legal & Risk
+842,trademark,/ˈtreɪdmɑːrk/,n.,商标,700,Legal & Risk
+843,copyright,/ˈkɑːpiraɪt/,n.,版权,700,Legal & Risk
+844,proprietary,/prəˈpraɪəteri/,adj.,专有的,700,Legal & Risk
+845,statutory,/ˈstætʃəˌtɔːri/,adj.,法定的,700,Legal & Risk
+846,mandatory,/ˈmændətɔːri/,adj.,强制的,700,Legal & Risk
+847,prohibit,/proʊˈhɪbɪt/,v.,禁止,700,Legal & Risk
+848,exempt,/ɪɡˈzempt/,adj./v.,豁免的；免除,700,Legal & Risk
+849,liable,/ˈlaɪəbəl/,adj.,负有法律责任的,700,Legal & Risk
+850,enforce,/ɪnˈfɔːrs/,v.,执行；强制实施,700,Legal & Risk
