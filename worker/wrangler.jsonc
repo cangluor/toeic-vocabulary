@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "toeic-progress",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-06",
+  "kv_namespaces": [
+    {
+      "binding": "PROGRESS"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
