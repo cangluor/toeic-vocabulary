@@ -1,0 +1,101 @@
+id,word,phonetic,partOfSpeech,meaning,level,topic
+1,office,/ˈɔfɪs/,n.,办公室；办事处,400,Office & Work
+2,company,/ˈkʌmpəni/,n.,公司,400,Office & Work
+3,work,/ˈwɝk/,n./v.,工作；运作,400,Office & Work
+4,job,/ˈdʒɑb/,n.,工作；职位,400,Office & Work
+5,desk,/ˈdɛsk/,n.,办公桌,400,Office & Work
+6,staff,/ˈstæf/,n.,员工；全体职员,400,Office & Work
+7,team,/ˈtim/,n.,团队,400,Office & Work
+8,manager,/ˈmænədʒɚ/,n.,经理,400,Office & Work
+9,employee,/ɛˈmplɔɪi/,n.,员工,400,Office & Work
+10,department,/dɪˈpɑrtmənt/,n.,部门,400,Office & Work
+11,project,/ˈprɑdʒɛkt/,n.,项目,400,Office & Work
+12,task,/ˈtæsk/,n.,任务,400,Office & Work
+13,report,/riˈpɔrt/,n./v.,报告；汇报,400,Office & Work
+14,document,/ˈdɑkjəmɛnt/,n.,文件；文档,400,Office & Work
+15,file,/ˈfaɪl/,n./v.,文件；归档,400,Office & Work
+16,copy,/ˈkɑpi/,n./v.,副本；复制,400,Office & Work
+17,print,/ˈprɪnt/,v./n.,打印；印刷品,400,Office & Work
+18,meeting,/ˈmitɪŋ/,n.,会议,400,Office & Work
+19,schedule,/ˈskɛdʒʊl/,n./v.,日程；安排,400,Office & Work
+20,deadline,/ˈdɛdlaɪn/,n.,截止日期,400,Office & Work
+21,email,/iˈmeɪl/,n./v.,电子邮件；发邮件,400,Communication
+22,message,/ˈmɛsədʒ/,n.,消息；留言,400,Communication
+23,call,/ˈkɔl/,n./v.,电话；打电话,400,Communication
+24,phone,/ˈfoʊn/,n.,电话,400,Communication
+25,contact,/ˈkɑntækt/,n./v.,联系；联系人,400,Communication
+26,reply,/rɪˈplaɪ/,n./v.,回复,400,Communication
+27,answer,/ˈænsɚ/,n./v.,回答；接听,400,Communication
+28,ask,/ˈæsk/,v.,询问；请求,400,Communication
+29,tell,/ˈtɛl/,v.,告诉,400,Communication
+30,speak,/ˈspik/,v.,说话；发言,400,Communication
+31,talk,/ˈtɔk/,n./v.,交谈；谈话,400,Communication
+32,discuss,/dɪˈskʌs/,v.,讨论,400,Communication
+33,explain,/ɪˈkspleɪn/,v.,解释,400,Communication
+34,confirm,/kəˈnfɝm/,v.,确认,400,Communication
+35,inform,/ɪˈnfɔrm/,v.,通知；告知,400,Communication
+36,announce,/əˈnaʊns/,v.,宣布；通知,400,Communication
+37,notice,/ˈnoʊtəs/,n./v.,通知；注意到,400,Communication
+38,question,/ˈkwɛstʃən/,n.,问题,400,Communication
+39,information,/ɪnfɚˈmeɪʃən/,n.,信息,400,Communication
+40,detail,/dɪˈteɪl/,n.,细节；详细信息,400,Communication
+41,time,/ˈtaɪm/,n.,时间,400,Time & Planning
+42,date,/ˈdeɪt/,n.,日期,400,Time & Planning
+43,day,/ˈdeɪ/,n.,天；日,400,Time & Planning
+44,week,/ˈwik/,n.,周,400,Time & Planning
+45,month,/ˈmʌnθ/,n.,月,400,Time & Planning
+46,year,/ˈjɪr/,n.,年,400,Time & Planning
+47,today,/təˈdeɪ/,adv./n.,今天,400,Time & Planning
+48,tomorrow,/təˈmɑroʊ/,adv./n.,明天,400,Time & Planning
+49,morning,/ˈmɔrnɪŋ/,n.,早晨；上午,400,Time & Planning
+50,afternoon,/æftɚˈnun/,n.,下午,400,Time & Planning
+51,evening,/ˈivnɪŋ/,n.,晚上,400,Time & Planning
+52,early,/ˈɝli/,adj./adv.,早的；提前,400,Time & Planning
+53,late,/ˈleɪt/,adj./adv.,迟的；晚,400,Time & Planning
+54,start,/ˈstɑrt/,n./v.,开始,400,Time & Planning
+55,finish,/ˈfɪnɪʃ/,n./v.,完成；结束,400,Time & Planning
+56,plan,/ˈplæn/,n./v.,计划,400,Time & Planning
+57,prepare,/priˈpɛr/,v.,准备,400,Time & Planning
+58,change,/ˈtʃeɪndʒ/,n./v.,改变；变更,400,Time & Planning
+59,delay,/dɪˈleɪ/,n./v.,延迟,400,Time & Planning
+60,cancel,/ˈkænsəl/,v.,取消,400,Time & Planning
+61,event,/ɪˈvɛnt/,n.,活动；事件,400,Meetings & Events
+62,conference,/ˈkɑnfɚəns/,n.,会议；大会,400,Meetings & Events
+63,appointment,/əˈpɔɪntmənt/,n.,预约；约会,400,Meetings & Events
+64,interview,/ˈɪntɚvju/,n./v.,面试；采访,400,Meetings & Events
+65,presentation,/prɛzəˈnteɪʃən/,n.,演示；发表,400,Meetings & Events
+66,training,/ˈtreɪnɪŋ/,n.,培训,400,Meetings & Events
+67,seminar,/ˈsɛmənɑr/,n.,研讨会,400,Meetings & Events
+68,workshop,/ˈwɝkʃɑp/,n.,讲习班；工作坊,400,Meetings & Events
+69,attend,/əˈtɛnd/,v.,参加；出席,400,Meetings & Events
+70,join,/ˈdʒɔɪn/,v.,加入；参加,400,Meetings & Events
+71,invite,/ɪˈnvaɪt/,v.,邀请,400,Meetings & Events
+72,guest,/ˈɡɛst/,n.,客人；来宾,400,Meetings & Events
+73,visitor,/ˈvɪzɪtɚ/,n.,访客,400,Meetings & Events
+74,room,/ˈrum/,n.,房间；会议室,400,Meetings & Events
+75,seat,/ˈsit/,n./v.,座位；使就座,400,Meetings & Events
+76,agenda,/əˈdʒɛndə/,n.,议程,400,Meetings & Events
+77,topic,/ˈtɑpɪk/,n.,主题；议题,400,Meetings & Events
+78,minute,/ˈmɪnət/,n.,分钟；会议记录,400,Meetings & Events
+79,break,/ˈbreɪk/,n./v.,休息；中断,400,Meetings & Events
+80,summary,/ˈsʌmɚi/,n.,总结；摘要,400,Meetings & Events
+81,customer,/ˈkʌstəmɚ/,n.,顾客；客户,400,Sales & Customers
+82,client,/ˈklaɪənt/,n.,客户；委托人,400,Sales & Customers
+83,sale,/ˈseɪl/,n.,销售；特价销售,400,Sales & Customers
+84,sell,/ˈsɛl/,v.,销售；卖,400,Sales & Customers
+85,buy,/ˈbaɪ/,v.,购买,400,Sales & Customers
+86,order,/ˈɔrdɚ/,n./v.,订单；订购,400,Sales & Customers
+87,product,/ˈprɑdəkt/,n.,产品,400,Sales & Customers
+88,service,/ˈsɝvəs/,n.,服务,400,Sales & Customers
+89,price,/ˈpraɪs/,n.,价格,400,Sales & Customers
+90,cost,/ˈkɑst/,n./v.,成本；花费,400,Sales & Customers
+91,discount,/dɪˈskaʊnt/,n./v.,折扣；打折,400,Sales & Customers
+92,offer,/ˈɔfɚ/,n./v.,报价；提供,400,Sales & Customers
+93,deal,/ˈdil/,n./v.,交易；处理,400,Sales & Customers
+94,market,/ˈmɑrkət/,n.,市场,400,Sales & Customers
+95,shop,/ˈʃɑp/,n./v.,商店；购物,400,Sales & Customers
+96,store,/ˈstɔr/,n./v.,商店；储存,400,Sales & Customers
+97,brand,/ˈbrænd/,n.,品牌,400,Sales & Customers
+98,quality,/ˈkwɑləti/,n.,质量,400,Sales & Customers
+99,popular,/ˈpɑpjəlɚ/,adj.,受欢迎的,400,Sales & Customers
+100,available,/əˈveɪləbəl/,adj.,可用的；有货的,400,Sales & Customers
