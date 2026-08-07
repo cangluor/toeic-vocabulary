@@ -1,0 +1,10 @@
+body:has(.mode-btn[data-mode="pos"].active) #card,
+body:has(.mode-btn[data-mode="pos"].active) #ratingButtons,
+body:has(.mode-btn[data-mode="pos"].active) #donePanel,
+body:has(.mode-btn[data-mode="pos"].active) #wordStats,
+body:has(.mode-btn[data-mode="pos"].active) #wordProgressTrack,
+body:has(.mode-btn[data-mode="collocation"].active) #card,
+body:has(.mode-btn[data-mode="collocation"].active) #ratingButtons,
+body:has(.mode-btn[data-mode="collocation"].active) #donePanel,
+body:has(.mode-btn[data-mode="collocation"].active) #wordStats,
+body:has(.mode-btn[data-mode="collocation"].active) #wordProgressTrack{display:none!important}
