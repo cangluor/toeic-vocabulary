@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TOEIC 单词循环</title>
-  <link rel="stylesheet" href="styles.css?v=8">
-  <script src="app-v4.js?v=8" defer></script>
+  <link rel="stylesheet" href="styles.css?v=9">
+  <script src="app-v4.js?v=9" defer></script>
+  <script src="data/questions/question-bank.js?v=9" defer></script>
+  <script src="quiz-app.js?v=9" defer></script>
 </head>
 <body>
   <main class="app">
     <header class="topbar">
-      <h1>TOEIC 单词循环 <small style="font-size:.65rem;color:#6b7280">v8</small></h1>
+      <h1>TOEIC 单词循环 <small style="font-size:.65rem;color:#6b7280">v9</small></h1>
     </header>
 
     <button id="syncSettingsBtn" type="button" hidden></button>
@@ -27,19 +29,25 @@
       </div>
     </details>
 
+    <section class="mode-panel" aria-label="学习模式">
+      <button class="mode-btn active" data-mode="vocabulary" type="button">背单词</button>
+      <button class="mode-btn" data-mode="pos" type="button">词性练习</button>
+      <button class="mode-btn" data-mode="collocation" type="button">固定搭配</button>
+    </section>
+
     <section class="level-panel" aria-label="词库等级">
       <button class="level-btn active" data-level="400" type="button">400分</button>
       <button class="level-btn" data-level="600" type="button">600分</button>
       <button class="level-btn" data-level="700" type="button">700分</button>
     </section>
 
-    <section class="stats" aria-label="学习统计">
+    <section id="wordStats" class="stats" aria-label="学习统计">
       <div><span id="progressText">0 / 0</span><small>当前进度</small></div>
       <div><span id="masteredText">0</span><small>已掌握</small></div>
       <div><span id="reviewText">0</span><small>待复习</small></div>
     </section>
 
-    <div class="progress-track" aria-hidden="true"><div id="progressBar"></div></div>
+    <div id="wordProgressTrack" class="progress-track" aria-hidden="true"><div id="progressBar"></div></div>
 
     <section id="card" class="word-card" tabindex="0" aria-live="polite">
       <div id="modeBadge" class="badge">学习</div>
@@ -68,6 +76,32 @@
       <button class="rating know" data-rating="know" type="button">认识</button>
       <button class="rating unsure" data-rating="unsure" type="button">模糊</button>
       <button class="rating unknown" data-rating="unknown" type="button">不认识</button>
+    </section>
+
+    <section id="quizPanel" class="quiz-panel hidden" aria-live="polite">
+      <section class="stats quiz-stats" aria-label="答题统计">
+        <div><span id="quizProgressText">0 / 0</span><small>答题进度</small></div>
+        <div><span id="quizCorrectText">0</span><small>正确</small></div>
+        <div><span id="quizWrongText">0</span><small>错题</small></div>
+      </section>
+      <div class="progress-track" aria-hidden="true"><div id="quizProgressBar"></div></div>
+
+      <div class="quiz-card">
+        <div id="quizModeBadge" class="badge">练习</div>
+        <div id="quizIndex" class="word-index">加载题库…</div>
+        <p id="quizSentence" class="quiz-sentence"></p>
+        <h2 id="quizPrompt" class="quiz-prompt">题库加载中…</h2>
+        <div id="quizOptions" class="quiz-options"></div>
+        <p id="quizFeedback" class="quiz-feedback hidden"></p>
+        <p id="quizTranslation" class="quiz-translation hidden"></p>
+        <button id="quizNextBtn" class="quiz-next hidden" type="button">下一题</button>
+      </div>
+
+      <div class="quiz-actions">
+        <button id="quizReviewBtn" type="button">没有错题</button>
+        <button id="quizRestartBtn" class="secondary" type="button">重新刷全部</button>
+        <button id="quizResetBtn" class="secondary" type="button">重置本档练习</button>
+      </div>
     </section>
 
     <section id="donePanel" class="done hidden">
