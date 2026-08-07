@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TOEIC 单词循环</title>
-  <link rel="stylesheet" href="styles.css?v=7">
-  <script src="app-v4.js?v=7" defer></script>
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script src="app-v4.js?v=8" defer></script>
 </head>
 <body>
   <main class="app">
     <header class="topbar">
-      <h1>TOEIC 单词循环 <small style="font-size:.65rem;color:#6b7280">v7</small></h1>
+      <h1>TOEIC 单词循环 <small style="font-size:.65rem;color:#6b7280">v8</small></h1>
     </header>
 
     <button id="syncSettingsBtn" type="button" hidden></button>
@@ -49,6 +49,17 @@
       <div id="answer" class="answer hidden">
         <p><strong id="partText"></strong> <span id="meaningText"></span></p>
         <p id="topicText" class="topic"></p>
+
+        <div id="exampleBlock" class="detail-block hidden">
+          <p class="detail-label">例句</p>
+          <p id="exampleText" class="example-en"></p>
+          <p id="exampleTranslation" class="example-cn"></p>
+        </div>
+
+        <div id="collocationBlock" class="detail-block hidden">
+          <p class="detail-label">常用搭配</p>
+          <div id="collocationList" class="collocation-list"></div>
+        </div>
       </div>
       <button id="revealBtn" class="reveal-btn" type="button">显示释义</button>
     </section>
