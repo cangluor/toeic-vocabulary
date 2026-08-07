@@ -6,6 +6,11 @@
     600: ['data/400/words-001-100.csv','data/400/words-101-200.csv','data/400/words-201-300.csv','data/400/words-301-400.csv','data/600/words-401-500.csv','data/600/words-501-600.csv','data/600/words-601-700.csv','data/600/words-701-750.csv'],
     700: ['data/400/words-001-100.csv','data/400/words-101-200.csv','data/400/words-201-300.csv','data/400/words-301-400.csv','data/600/words-401-500.csv','data/600/words-501-600.csv','data/600/words-601-700.csv','data/600/words-701-750.csv','data/700/words-751-850.csv','data/700/words-851-950.csv','data/700/words-951-1000.csv']
   };
+  var ENRICHMENT_FILES = {
+    400: ['data/enrichment/words-001-100.csv','data/enrichment/words-101-200.csv','data/enrichment/words-201-300.csv','data/enrichment/words-301-400.csv'],
+    600: ['data/enrichment/words-001-100.csv','data/enrichment/words-101-200.csv','data/enrichment/words-201-300.csv','data/enrichment/words-301-400.csv','data/enrichment/words-401-500.csv','data/enrichment/words-501-600.csv','data/enrichment/words-601-700.csv','data/enrichment/words-701-750.csv'],
+    700: ['data/enrichment/words-001-100.csv','data/enrichment/words-101-200.csv','data/enrichment/words-201-300.csv','data/enrichment/words-301-400.csv','data/enrichment/words-401-500.csv','data/enrichment/words-501-600.csv','data/enrichment/words-601-700.csv','data/enrichment/words-701-750.csv','data/enrichment/words-751-850.csv','data/enrichment/words-851-950.csv','data/enrichment/words-951-1000.csv']
+  };
   var DEFAULT_API = 'https://toeic-vocabulary.cangluo1996.workers.dev';
   var level = 400, words = [], queue = [], cursor = 0, mode = 'study', revealed = false;
   var state = emptyState(), syncTimer = null, syncing = false;
@@ -20,8 +25,8 @@
   function safeRemove(key) { try { localStorage.removeItem(key); } catch (e) {} }
 
   function initUi() {
-    ['progressText','masteredText','reviewText','progressBar','card','modeBadge','wordIndex','wordText','phoneticText','answer','partText','meaningText','topicText','revealBtn','ratingButtons','donePanel','doneTitle','doneText','reviewBtn','restartBtn','resetBtn','errorText','syncSettingsBtn','syncPanel','apiUrlInput','syncCodeInput','connectBtn','disconnectBtn','syncStatus','cloudIndicator'].forEach(function (id) { ui[id] = byId(id); });
-    ['wordText','syncSettingsBtn','syncPanel','apiUrlInput','syncCodeInput'].forEach(function (id) { if (!ui[id]) throw new Error('页面缺少元素：' + id); });
+    ['progressText','masteredText','reviewText','progressBar','card','modeBadge','wordIndex','wordText','phoneticText','answer','partText','meaningText','topicText','exampleBlock','exampleText','exampleTranslation','collocationBlock','collocationList','revealBtn','ratingButtons','donePanel','doneTitle','doneText','reviewBtn','restartBtn','resetBtn','errorText','syncSettingsBtn','syncPanel','apiUrlInput','syncCodeInput','connectBtn','disconnectBtn','syncStatus','cloudIndicator'].forEach(function (id) { ui[id] = byId(id); });
+    ['wordText','syncSettingsBtn','syncPanel','apiUrlInput','syncCodeInput','exampleBlock','exampleText','exampleTranslation','collocationBlock','collocationList'].forEach(function (id) { if (!ui[id]) throw new Error('页面缺少元素：' + id); });
   }
 
   function splitCsvLine(line) {
@@ -46,16 +51,30 @@
       return obj;
     });
   }
+  function fetchCsv(path) {
+    return fetch(path + '?v=8').then(function (r) {
+      if (!r.ok) throw new Error(path + '（HTTP ' + r.status + '）');
+      return r.text();
+    }).then(parseCsv);
+  }
 
   function loadWords() {
     ui.wordText.textContent = '加载中…';
-    Promise.all(LEVEL_FILES[level].map(function (path) {
-      return fetch(path + '?v=4').then(function (r) {
-        if (!r.ok) throw new Error(path + '（HTTP ' + r.status + '）');
-        return r.text();
-      }).then(parseCsv);
-    })).then(function (parts) {
-      words = [].concat.apply([], parts).map(function (w) { w.id = Number(w.id); w.level = Number(w.level); return w; });
+    var wordPromise = Promise.all(LEVEL_FILES[level].map(fetchCsv));
+    var enrichmentPromise = Promise.all(ENRICHMENT_FILES[level].map(fetchCsv));
+    Promise.all([wordPromise, enrichmentPromise]).then(function (result) {
+      var baseRows = [].concat.apply([], result[0]);
+      var extraRows = [].concat.apply([], result[1]);
+      var extraById = {};
+      extraRows.forEach(function (row) { extraById[Number(row.id)] = row; });
+      words = baseRows.map(function (w) {
+        w.id = Number(w.id); w.level = Number(w.level);
+        var extra = extraById[w.id] || {};
+        w.example = extra.example || '';
+        w.exampleTranslation = extra.exampleTranslation || '';
+        w.collocations = extra.collocations || '';
+        return w;
+      });
       if (!words.length) throw new Error('词库为空');
       loadState(); startSavedMode(); hideError();
     }).catch(function (err) { showError('词库读取失败：' + err.message); ui.wordText.textContent = '读取失败'; });
@@ -77,6 +96,22 @@
   function startReview() { queue=reviewIds(); state.reviewOrder=queue.slice(); state.reviewCursor=0; cursor=0; mode='review'; saveState(); render(); }
   function currentWord() { var id=queue[cursor]; return words.find(function (w) { return w.id===id; }); }
 
+  function renderCollocations(text) {
+    ui.collocationList.innerHTML = '';
+    var items = (text || '').split('|').map(function (item) { return item.trim(); }).filter(Boolean);
+    if (!items.length) { ui.collocationBlock.classList.add('hidden'); return; }
+    items.forEach(function (item) {
+      var splitAt = item.indexOf('=');
+      var phrase = splitAt >= 0 ? item.slice(0, splitAt).trim() : item;
+      var meaning = splitAt >= 0 ? item.slice(splitAt + 1).trim() : '';
+      var row = document.createElement('div'); row.className = 'collocation-item';
+      var strong = document.createElement('strong'); strong.textContent = phrase; row.appendChild(strong);
+      if (meaning) { var span = document.createElement('span'); span.textContent = meaning; row.appendChild(span); }
+      ui.collocationList.appendChild(row);
+    });
+    ui.collocationBlock.classList.remove('hidden');
+  }
+
   function render() {
     updateStats(); revealed=false;
     ui.answer.classList.add('hidden'); ui.ratingButtons.classList.add('hidden'); ui.revealBtn.classList.remove('hidden'); ui.donePanel.classList.add('hidden'); ui.card.classList.remove('hidden');
@@ -85,6 +120,14 @@
     ui.modeBadge.textContent = mode==='review' ? '复习' : '学习';
     ui.wordIndex.textContent = (cursor+1) + ' / ' + queue.length + ' · 总编号 ' + w.id;
     ui.wordText.textContent=w.word; ui.phoneticText.textContent=w.phonetic; ui.partText.textContent=w.partOfSpeech; ui.meaningText.textContent=w.meaning; ui.topicText.textContent=w.topic;
+    if (w.example) {
+      ui.exampleText.textContent = w.example;
+      ui.exampleTranslation.textContent = w.exampleTranslation;
+      ui.exampleBlock.classList.remove('hidden');
+    } else {
+      ui.exampleText.textContent = ''; ui.exampleTranslation.textContent = ''; ui.exampleBlock.classList.add('hidden');
+    }
+    renderCollocations(w.collocations);
   }
   function updateStats() {
     var completed=words.filter(function(w){return state.ratings[w.id];}).length;
