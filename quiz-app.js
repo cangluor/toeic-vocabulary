@@ -11,7 +11,7 @@
   function emptyQuizState(){return {answers:{},cursor:0,wrong:[]};}
 
   function initUi(){
-    ['quizPanel','quizModeBadge','quizIndex','quizSentence','quizPrompt','quizOptions','quizFeedback','quizTranslation','quizUsage','quizNextBtn','quizReviewBtn','quizRestartBtn','quizResetBtn','quizProgressText','quizCorrectText','quizWrongText','quizCorrectLabel','quizWrongLabel','quizProgressBar','wordStats','wordProgressTrack','card','ratingButtons','donePanel','resetBtn'].forEach(function(id){ui[id]=byId(id);});
+    ['quizPanel','quizModeBadge','quizIndex','quizSentence','quizPrompt','quizOptions','quizFeedback','quizExampleText','quizTranslation','quizUsage','quizNextBtn','quizReviewBtn','quizRestartBtn','quizResetBtn','quizProgressText','quizCorrectText','quizWrongText','quizCorrectLabel','quizWrongLabel','quizProgressBar','wordStats','wordProgressTrack','card','ratingButtons','donePanel','resetBtn'].forEach(function(id){ui[id]=byId(id);});
     if(!ui.quizPanel)throw new Error('页面缺少练习区域');
   }
 
@@ -41,20 +41,16 @@
       if(byId('revealBtn')&&!byId('revealBtn').classList.contains('hidden'))ui.ratingButtons.classList.add('hidden');
       return;
     }
-    ui.card.classList.add('hidden');ui.ratingButtons.classList.add('hidden');ui.donePanel.classList.add('hidden');ui.wordStats.classList.add('hidden');ui.wordProgressTrack.classList.add('hidden');ui.resetBtn.classList.add('hidden');ui.quizPanel.classList.remove('hidden');
-    prepareQuestions(false);
+    ui.card.classList.add('hidden');ui.ratingButtons.classList.add('hidden');ui.donePanel.classList.add('hidden');ui.wordStats.classList.add('hidden');ui.wordProgressTrack.classList.add('hidden');ui.resetBtn.classList.add('hidden');ui.quizPanel.classList.remove('hidden');prepareQuestions(false);
   }
 
   function prepareQuestions(reset){
     if(!bank||activeMode==='vocabulary')return;
-    questions=bank[quizKey()].filter(function(q){return q.level===level;});
-    loadQuizState();if(reset){state.cursor=0;saveQuizState();}
+    questions=bank[quizKey()].filter(function(q){return q.level===level;});loadQuizState();
+    if(reset){state.cursor=0;saveQuizState();}
     reviewMode=false;queue=questions.slice();cursor=Math.min(Number(state.cursor)||0,queue.length);renderQuestion();
   }
-  function startReview(){
-    loadQuizState();var wrongSet={};state.wrong.forEach(function(id){wrongSet[Number(id)]=true;});
-    queue=questions.filter(function(q){return wrongSet[q.id];});reviewMode=true;cursor=0;renderQuestion();
-  }
+  function startReview(){loadQuizState();var wrongSet={};state.wrong.forEach(function(id){wrongSet[Number(id)]=true;});queue=questions.filter(function(q){return wrongSet[q.id];});reviewMode=true;cursor=0;renderQuestion();}
   function currentQuestion(){return queue[cursor];}
 
   function renderStats(){
@@ -63,15 +59,13 @@
     var positive=questions.filter(function(q){return state.answers[q.id]===true;}).length;
     var negative=state.wrong.filter(function(id){return questions.some(function(q){return q.id===Number(id);});}).length;
     ui.quizProgressText.textContent=answered+' / '+total;ui.quizCorrectText.textContent=positive;ui.quizWrongText.textContent=negative;
-    ui.quizCorrectLabel.textContent=activeMode==='collocation'?'认识':'正确';
-    ui.quizWrongLabel.textContent=activeMode==='collocation'?'不认识':'错题';
-    ui.quizProgressBar.style.width=(total?answered/total*100:0)+'%';
-    ui.quizReviewBtn.disabled=negative===0;
+    ui.quizCorrectLabel.textContent=activeMode==='collocation'?'认识':'正确';ui.quizWrongLabel.textContent=activeMode==='collocation'?'不认识':'错题';
+    ui.quizProgressBar.style.width=(total?answered/total*100:0)+'%';ui.quizReviewBtn.disabled=negative===0;
     ui.quizReviewBtn.textContent=negative?(activeMode==='collocation'?'复习不认识（'+negative+'）':'只刷错题（'+negative+'）'):(activeMode==='collocation'?'没有待复习搭配':'没有错题');
   }
   function clearOptions(){while(ui.quizOptions.firstChild)ui.quizOptions.removeChild(ui.quizOptions.firstChild);}
   function resetAnswerDisplay(){
-    answeredCurrent=false;ui.quizFeedback.className='quiz-feedback hidden';ui.quizTranslation.classList.add('hidden');ui.quizUsage.classList.add('hidden');ui.quizNextBtn.classList.add('hidden');clearOptions();
+    answeredCurrent=false;ui.quizFeedback.className='quiz-feedback hidden';ui.quizExampleText.classList.add('hidden');ui.quizTranslation.classList.add('hidden');ui.quizUsage.classList.add('hidden');ui.quizNextBtn.classList.add('hidden');clearOptions();
   }
 
   function renderQuestion(){
@@ -80,34 +74,16 @@
       ui.quizModeBadge.textContent=reviewMode?(activeMode==='collocation'?'搭配复习完成':'错题复习完成'):'练习完成';ui.quizIndex.textContent='';ui.quizSentence.textContent='';ui.quizSentence.classList.add('hidden');ui.quizPrompt.textContent=reviewMode?'本轮复习完成。':'本档练习完成。';return;
     }
     var q=currentQuestion();
-    ui.quizModeBadge.textContent=activeMode==='pos'?(reviewMode?'词性 · 错题':'词性练习'):(reviewMode?'搭配 · 复习':'固定搭配');
-    ui.quizIndex.textContent=(cursor+1)+' / '+queue.length+' · 题号 '+q.id;
-
+    ui.quizModeBadge.textContent=activeMode==='pos'?(reviewMode?'词性 · 错题':'词性练习'):(reviewMode?'搭配 · 复习':'固定搭配');ui.quizIndex.textContent=(cursor+1)+' / '+queue.length+' · 题号 '+q.id;
     if(activeMode==='collocation'){
-      ui.quizSentence.textContent='';ui.quizSentence.classList.add('hidden');
-      ui.quizPrompt.textContent=q.answer;
-      addRecognitionButton('认识',true,'know-choice');
-      addRecognitionButton('不认识',false,'unknown-choice');
-      return;
+      ui.quizSentence.textContent='';ui.quizSentence.classList.add('hidden');ui.quizPrompt.textContent=q.answer;addRecognitionButton('认识',true,'know-choice');addRecognitionButton('不认识',false,'unknown-choice');return;
     }
-
     ui.quizSentence.textContent=q.sentence||'';ui.quizSentence.classList.toggle('hidden',!q.sentence);ui.quizPrompt.textContent=q.prompt;
-    q.options.forEach(function(option,index){
-      var button=document.createElement('button');button.type='button';button.className='quiz-option';button.dataset.value=option;button.textContent=String.fromCharCode(65+index)+'. '+option;
-      button.addEventListener('click',function(){answerPosQuestion(option);});ui.quizOptions.appendChild(button);
-    });
+    q.options.forEach(function(option,index){var button=document.createElement('button');button.type='button';button.className='quiz-option';button.dataset.value=option;button.textContent=String.fromCharCode(65+index)+'. '+option;button.addEventListener('click',function(){answerPosQuestion(option);});ui.quizOptions.appendChild(button);});
   }
 
-  function addRecognitionButton(label,value,extraClass){
-    var button=document.createElement('button');button.type='button';button.className='quiz-option '+extraClass;button.textContent=label;button.dataset.value=String(value);
-    button.addEventListener('click',function(){answerCollocation(value);});ui.quizOptions.appendChild(button);
-  }
-
-  function updateState(result){
-    var q=currentQuestion();state.answers[q.id]=result;var wrongIndex=state.wrong.map(Number).indexOf(q.id);
-    if(result){if(wrongIndex>=0)state.wrong.splice(wrongIndex,1);}else if(wrongIndex<0)state.wrong.push(q.id);
-    if(!reviewMode)state.cursor=Math.max(Number(state.cursor)||0,cursor+1);saveQuizState();
-  }
+  function addRecognitionButton(label,value,extraClass){var button=document.createElement('button');button.type='button';button.className='quiz-option '+extraClass;button.textContent=label;button.dataset.value=String(value);button.addEventListener('click',function(){answerCollocation(value);});ui.quizOptions.appendChild(button);}
+  function updateState(result){var q=currentQuestion();state.answers[q.id]=result;var wrongIndex=state.wrong.map(Number).indexOf(q.id);if(result){if(wrongIndex>=0)state.wrong.splice(wrongIndex,1);}else if(wrongIndex<0)state.wrong.push(q.id);if(!reviewMode)state.cursor=Math.max(Number(state.cursor)||0,cursor+1);saveQuizState();}
 
   function answerPosQuestion(selected){
     if(answeredCurrent||!currentQuestion())return;answeredCurrent=true;var q=currentQuestion(),correct=selected===q.answer;updateState(correct);
@@ -120,9 +96,8 @@
   function answerCollocation(known){
     if(answeredCurrent||!currentQuestion())return;answeredCurrent=true;var q=currentQuestion();updateState(known);
     Array.prototype.forEach.call(ui.quizOptions.children,function(button){button.disabled=true;});
-    ui.quizFeedback.textContent=(known?'已标记为认识。':'已加入待复习。')+(q.answerMeaning?'  '+q.answerMeaning:'');
-    ui.quizFeedback.className='quiz-feedback '+(known?'correct-text':'wrong-text');
-    if(q.sentence){ui.quizSentence.textContent=q.sentence;ui.quizSentence.classList.remove('hidden');}
+    ui.quizFeedback.textContent=(known?'已标记为认识。':'已加入待复习。')+(q.answerMeaning?'  '+q.answerMeaning:'');ui.quizFeedback.className='quiz-feedback '+(known?'correct-text':'wrong-text');
+    if(q.sentence){ui.quizExampleText.textContent='例句：'+q.sentence;ui.quizExampleText.classList.remove('hidden');}
     if(q.sentenceTranslation){ui.quizTranslation.textContent=q.sentenceTranslation;ui.quizTranslation.classList.remove('hidden');}
     if(q.usage){ui.quizUsage.textContent='用法：'+q.usage;ui.quizUsage.classList.remove('hidden');}
     ui.quizNextBtn.classList.remove('hidden');renderStats();
@@ -131,16 +106,12 @@
   function nextQuestion(){if(!answeredCurrent)return;cursor++;renderQuestion();}
   function restartCurrent(){state=emptyQuizState();saveQuizState();reviewMode=false;queue=questions.slice();cursor=0;renderQuestion();}
   function resetQuiz(){if(!confirm('确定重置 '+level+' 分档的'+(activeMode==='pos'?'词性练习':'固定搭配')+'记录吗？'))return;restartCurrent();}
-
   function bindEvents(){
     document.querySelectorAll('.mode-btn').forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.mode);});});
     document.querySelectorAll('.level-btn').forEach(function(b){b.addEventListener('click',function(){level=Number(b.dataset.level);if(activeMode!=='vocabulary')prepareQuestions(false);});});
     ui.quizNextBtn.addEventListener('click',nextQuestion);ui.quizReviewBtn.addEventListener('click',startReview);ui.quizRestartBtn.addEventListener('click',restartCurrent);ui.quizResetBtn.addEventListener('click',resetQuiz);
     var connect=byId('connectBtn');if(connect)connect.addEventListener('click',function(){setTimeout(function(){if(activeMode!=='vocabulary')prepareQuestions(false);},1200);});
   }
-  function boot(){
-    initUi();bindEvents();if(!window.TOEIC_QUESTION_BANK)throw new Error('题库脚本未加载');
-    window.TOEIC_QUESTION_BANK.load().then(function(loaded){bank=loaded;if(activeMode!=='vocabulary')prepareQuestions(false);}).catch(function(err){ui.quizPanel.classList.remove('hidden');ui.quizPrompt.textContent='题库读取失败：'+err.message;});
-  }
+  function boot(){initUi();bindEvents();if(!window.TOEIC_QUESTION_BANK)throw new Error('题库脚本未加载');window.TOEIC_QUESTION_BANK.load().then(function(loaded){bank=loaded;if(activeMode!=='vocabulary')prepareQuestions(false);}).catch(function(err){ui.quizPanel.classList.remove('hidden');ui.quizPrompt.textContent='题库读取失败：'+err.message;});}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();
